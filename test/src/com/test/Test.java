@@ -11,12 +11,16 @@ package com.test;
  */
 public class Test {
 	public static void main(String[] args) {
+		test();
+	}
+
+	private static void test() {
 		System.out.println("tste");
 		System.out.println("fdsffds");
 	}
 	
 	
-	private String sayHello(String h){
+	private String sayHello(String hel){
 		
 		return "hello";
 	}
