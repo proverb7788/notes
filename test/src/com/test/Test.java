@@ -12,4 +12,10 @@ public class Test {
 		System.out.println("tste");
 		System.out.println("fdsffds");
 	}
+	
+	
+	private String sayHello(String hello){
+		
+		return "hello";
+	}
 }
