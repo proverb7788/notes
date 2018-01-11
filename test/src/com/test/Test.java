@@ -18,7 +18,7 @@ public class Test {
 	}
 	
 	
-	private String sayHello(String hello){
+	private String sayHello(String hel){
 		
 		return "hello";
 	}
