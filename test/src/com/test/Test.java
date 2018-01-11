@@ -8,5 +8,7 @@ package com.test;
  * 2018年1月11日 下午1:31:38
  */
 public class Test {
-
+	public static void main(String[] args) {
+		System.out.println("tste");
+	}
 }
