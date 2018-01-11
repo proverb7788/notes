@@ -4,6 +4,8 @@
  */
 package com.test;
 /**
+	git config --global user.email "l334964413@sina.com"
+	git config --global user.name "l334964413"
  * @author Qiyang.Zhang
  * 2018年1月11日 下午1:31:38
  */
@@ -14,7 +16,7 @@ public class Test {
 	}
 	
 	
-	private String sayHello(String hello){
+	private String sayHello(String h){
 		
 		return "hello";
 	}
