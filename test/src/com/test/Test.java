@@ -20,7 +20,7 @@ public class Test {
 	}
 	
 	
-	private String sayHello(String zhang170){
+	private String sayHello(String zhang170170){
 		
 		return "hello";
 	}
