@@ -1,0 +1,136 @@
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+PUT http://localhost:8200/lib2/
+{
+  "settings":{
+    "index":{
+      "number_of_shards":5,
+      "number_of_replicas":1
+      
+    }
+    
+  }
+  
+}
+
+GET /lib/_settings
+
+GET /lib,lib2/_settings
+
+GET /_all/_settings
+
+PUT /lib/books/1
+{
+  "title":"core java",
+  "data":"2018-4-15"
+
+}
+
+PUT /lib/books/2
+{
+  "title":"mysql",
+  "data":"2018-1-20"
+
+}
+
+POST /lib/books/
+{
+  "title":"js",
+  "data":"2018-2-20"
+
+}
+
+# AWFLhJ_0S8Kek4URLGtg
+
+GET /lib/books/1
+
+GET /lib/books/2
+
+
+
+GET /lib/books/AWFLhJ_0S8Kek4URLGtg
+
+GET /lib/books/AWFLhJ_0S8Kek4URLGtg?_source=title
+
+GET /lib/books/AWFLhJ_0S8Kek4URLGtg?_source=data,title
+
+GET /lib/books/AWFLhJ_0S8Kek4URLGtg?_source
+
+
+
+# 修改
+
+PUT /lib/books/1
+{
+  "title":"core java_my",
+  "data":"2018-4-15"
+
+}
+
+POST /lib/books/1?_update
+{
+  "title":"core java_my_update"
+
+}
+
+
+GET /lib/books/1?_source
+
+DELETE /lib/books/1
+
+
+
+PUT /lib2/books/1
+{
+  "title":"core java",
+  "data":"2018-4-15"
+
+}
+
+GET /lib2/books/1?_source
+
+DELETE /lib2/
+
+DELETE /lib2/books/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
